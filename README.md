@@ -31,7 +31,7 @@ If the operation failures N times (the failure threshold) the circuit
 moves to `closed`. Calls in the `closed` state will immediate fail and
 raise an exception. After a specified time period has passed (retry
 timeout) the circuit moves into `half-open`. Calls happen normally. If
-a call fails the state moves to `open`. If the call suceeds it moves
+a call fails the state moves to `closed`. If the call suceeds it moves
 to `open`. All calls are capped with a timeout. If a timeout occurs
 that counts as a failure.
 
